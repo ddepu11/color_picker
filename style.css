@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+.navbar {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2), 0px 0px 5px rgba(0, 202, 10, 0.2);
+  padding: 0.8em 1em;
+
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar span {
+  font-size: 1.5em;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  color: #19516b;
+}
+.navbar .value-type a {
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-left: 0.9em;
+  background-color: #5f5f5f;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 1.5em;
+  display: inline-block;
+}
+
+.navbar .value-type a:hover {
+  transform: scale(0.97);
+}
+main {
+  min-height: calc(100vh - 5.75rem);
+  display: grid;
+  place-items: center;
+}
+.hero {
+  display: grid;
+  place-items: center;
+}
+
+.value {
+  font-size: 0.9em;
+}
+.hero h1 {
+  background-color: #242424;
+  color: white;
+  border-radius: 8px;
+  padding: 5px 15px;
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.hero span {
+  color: rgb(57, 153, 209);
+}
+
+.hero .btn {
+  border: 0;
+  outline: 0;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 5%;
+  padding: 2% 5%;
+  border-radius: 10px;
+  background-color: #242424;
+  color: white;
+  cursor: pointer;
+}
+.hero .btn:hover {
+  transform: scale(0.97);
+}
+footer {
+  display: grid;
+  justify-content: flex-end;
+  align-items: center;
+}
+h2 {
+  display: flex;
+  font-size: 1.2em;
+  background-color: #414141;
+  color: white;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+
+@media (max-width: 800px) {
+  main {
+    min-height: calc(100vh - 5.7rem);
+  }
+
+  .hero h1 {
+    padding: 5px 20px;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+  .hero .btn {
+    font-size: 1.3em;
+    margin-top: 8%;
+    padding: 2% 5%;
+  }
+  .center {
+    justify-content: space-around;
+  }
+  /* 
+  .navbar .value-type a {
+    margin-left: 0.4em;
+  } */
+
+  .hero h1 {
+    padding: 5px 10px;
+    font-size: 3em;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 500px) {
+  .hero h1 {
+    padding: 4px 8px;
+    font-size: 1.5em;
+    letter-spacing: 0.5px;
+  }
+
+  .value-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
